@@ -2,7 +2,7 @@
 
 #### _Application that displays a log of places you have visited, 8/24/20_
 
-#### By _**Brian Harvey and Andrew McCauley**_
+#### By _**Brian Harvey and Andrew Macauley**_
 
 ## Description
 
@@ -43,4 +43,4 @@ _Bootstrap_
 
 *This application operates under the GPL license*
 
-Copyright (c) 2016 **_Brian Havey, Andrew McCauley_**
+Copyright (c) 2016 **_Brian Havey, Andrew Macauley_**
