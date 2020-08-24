@@ -49,3 +49,8 @@ function Location(city, country, year, landmark, memory) {
 Location.prototype.place = function() {
   return this.city + ", " + this.country;
 }
+
+//User Interface
+$(document).ready(function() {
+
+});
