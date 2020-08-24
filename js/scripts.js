@@ -1,20 +1,31 @@
 //buisness Logic for Location
-function travelGuide() {
-  this.place = [];
+function TravelGuide() {
+  this.location = [];
   this.currentId = 0;
 }
 
-travelGuide.prototype.addLocation = function(place) {
-  place.id = this.assignId();
-  this.place.push(place)
+TravelGuide.prototype.addLocation = function(location) {
+  location.id = this.assignId();
+  this.location.push(location)
 }
 
-travelGuide.prototype.assignId = function() {
+TravelGuide.prototype.assignId = function() {
   this.currentId += 1;
   return this.currentId;
 }
 
-travelGuide.prototype.
+TravelGuide.prototype.findLocation = function(id) {
+  for (let i=0; i< this.location.length; i++) {
+    if (this.location[i]) {
+      if (this.location[i].id == id) {
+        return this.location[i];
+      }
+    }
+  };
+  return false;
+}
+
+
 
 
 
@@ -34,6 +45,6 @@ function Location(city, country, year, landmark, memory) {
   this.memory = memory;
 }
 
-Location.prototype.destination = function() {
+Location.prototype.place = function() {
   return this.city + ", " + this.country;
 }
